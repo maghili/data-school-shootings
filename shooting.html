@@ -1,0 +1,137 @@
+<html>
+<head>
+	<title>A Research on School Shooting Rate in the US</title>
+	<style type="text/css">
+		#motivation{
+			/*color:black;*/
+			background:black;
+			width:1200px;
+			overflow:auto;
+			padding:10px;
+			margin:auto;
+		}
+		#lefty{
+			float:left;
+			margin:10px 0 10px 50px
+		}
+		#righty{
+			float:right;
+			margin:10px 50px 10px 0;
+		}
+		#art{
+			float:right;
+			margin:-20px 80px 10px 0;
+		}
+		div{
+			color:white;
+		}
+		p{
+			font-size:18px;
+		}
+	</style>
+</head>
+<body  style="background:url(bg.jpg);">
+	<div id="motivation", style="text-align:center;width=1200px">
+		<h1>A Reasearch on School Shooting Rate in the US </h1>
+		<h2>by Miremad Aghili</h2>
+		<h2>14 May 2018</h2>
+	</div>
+	<div id="motivation">
+		<p style="width:1200px"> This is an independent research on school shootings in the United States of America since 1999. The effects of various factors are taken into account and some predictive models have been proposed in the hope that this study can be used in order to implement an effective gun control law for protecting the children. The references for the data can be found from the links in the text and at the end of the paper.</p>
+	</div>
+	<div id="motivation">
+		<h2 style="text-align:center"> Motivation</h2>
+		<p>The school shooting in the United States is a big issue, where over 200 cases were reported only in twenty years, resulting in many deaths, injuries, and casualties of the children. There is a need for a solution or at least a plan to reduce these unfortunate incidents, especially now that there is an awareness regarding this issue after the recent school shooting in Parkland Florida. This study is mostly focused on the data presented by Washington post and presented in <a href="https://github.com/washingtonpost/data-school-shootings" target="_blank">github</a>.
+	<iframe src="SchoolShooting.html" width=1200px height=600px frameborder="0"></iframe>
+	The picture above shows the distribution of school shootings in the United States, during past 20 years. The incidents more or less are spread out all across the country which means this is not a local issue and it threatens the lives of all of the children.</p>
+	</div>
+	<div id="motivation">
+		<h2 style="text-align:center">Political Influence</h2>
+		<p>Here we investigate the effect of decision making by the leaders in the country on the shooting rates in the United States. The first point that comes to the mind is the amount of attention the education sector receives from the government each year. If we characterize the amount of attention by government expenditure per capita
+ (see <a href="https://knoema.com/atlas/United-States-of-America/Education-expenditure" target="_blank">Knoma</a>) each year we see that there is indeed a direct correlation between the two (with p-value 2e-3). However, there is a one-year time lag as one would expect between the decision and the actual effect on the shooting rate.<br/>
+		<img id="lefty" src="AttackExpenditure.png"/><img id="righty" src="Attack_Expenditure.png"/></p><br/>
+		</div>
+	<div id="motivation">
+		<p> In addition to the above, one can investigate the impact of parties in the power on the attack rates (for example see <a href="https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States" target="_blank">Presidency</a>, <a href="https://www.senate.gov/artandhistory/history/common/briefing/Majority_Minority_Leaders.htm" target="_blank">Congress</a>, <a href="http://history.house.gov/Institution/Party-Divisions/Party-Divisions/" target="_blank">House</a>). Here in this study, we assume all the positions have equal power and holding two out of the three means the party has the majority of the power. This is an important point because National Rifle Association (NRA) is a major supporter of <span style="color:red">Republican</span> party. Therefore, between the two parties the <span style="color:blue">Democrats</span> are a better supporter of gun control. Accordingly, one would expect that when <span style="color:red">Republicans</span> are in power they would use their influence in favor of NRA and this would result in easier access to the firearms. By looking at the distribution of attack rates based on the party in power we see that indeed this is true and the attack rate is well above the average when the 
+<span style="color:red">Republicans</span> are in power. The normalized plot, with the area representing the attack rate and the color representing the corresponding party, also verifies this claim.</p> <br/>
+	<img id="lefty" src="RepvsDem.png"/><img id="art"src="RD.png"/>
+	</div>
+	<div id="motivation">
+		<h2 style="text-align:center">Gun Control</h2>
+		<p> In this section, we will be looking at the positive effects of even a minor gun control on school shooting rates. Even though it will not be enough but these are some easy solutions to at least reduce the risk until a more general solution is proposed.</p><br/>
+		<h3> Friends and Family</h3>
+		<p>We see that even with the smallest of attention we could save many children. In particular, more than 27% of the shooters obtained their weapon from their friends and family, which if it was not provided one could save 96 children. On the other hand, about 12% of the shootings were accidental. Accidental shootings can happen mostly because of lack of experience with guns. Removing this would be equivalent to saving 3 lives and 38 fewer injuries.</p>
+		<img id="lefty" src="firandfam.png"/><img id="righty" src="Acc.png"/>
+	</div>
+	<div id="Motivation">
+		<h3>Government</h3>
+		<p> Taking a look at the type of guns used in school shootings we realize a scary fact. Most of the attacks with <b>Automatic</b> or <b> Semi-automatic</b> guns have happened in recent years and that means these guns are now more available to the people. Moreover, the average number of people killed with such guns (1.36 per attack) is the highest after rifles (1.71 per attack) with high precision. The government can reduce the number of attacks by 21% and the number of dead by 46% by at least banning the automatic or semi-automatic guns.</p>
+		<center><img src="guntype.png"/></center>
+		<img id="lefty" src="AutvsOth.png"/>
+		<img id="righty" src="AutRatio.png"/>
+		<iframe src="Aut.html" width=1200px height=600px frameborder="0"></iframe>
+		<!-- <img style="width:1200px" src="cbargun.png"/>-->
+	</div>
+	<div id="motivation">
+		<h2 style="text-align:center">Prediction and Prevention</h2>
+		<p> This section has special importance as it provides some statistics for prediction and prevention of school shootings. A few important factors that need to be taken into account, is the sensitive age for different genders, number of guns and time of the year. </p>	
+	</div>
+	<div id="motivation">
+		<h3>Time of the year</h3>
+		<p> Time of incidents is presented in the data as a day of the week, date and the school year. The day of the week does not show any pattern. the shootings are almost uniformly distributed between them. However, Most of the shootings are concentrated in the first two months of the year Jan. and Feb. (about 33%) and this is in agreement even with all-time shooting record (see <a href="https://en.wikipedia.org/wiki/List_of_school_shootings_in_the_United_States" target="_blank">Wikipedia</a>). To justify the result one can look at the shooting type. 65% of the shootings are targeted and that is more than the average targeted shootings in the data. The shooters most probably have used the holidays to come up with a plan, and after the holidays they accordingly attacked.</p>
+		<img id="lefty" src="month.png"/>
+		<img id="righty" src="targeted.png"/>
+	</div>
+	<div id="motivation">
+		<p>A two-dimensional histogram of the month and the day of the month indicates the sensitive dates, where the police should pay more attention to the schools to reduce the risk. We can see that this map truly indicates that the number of attacks should be very small during the Summer.</p>
+		<center><img style="margin:auto" src="DayvsMonth.png"/></center>
+	</div>
+	<div id="motivation">
+		<h3>Gender and Age</h3>
+		<p>This part of the study is important in the sense that it provides a gender-based age range for which the children are more vulnerable and need more attention from the educational system. Motivational speakers can go to the schools each year and target the students in their sensitive age and hopefully reduce the risk.</p>
+		<img id="lefty" src="female.png"/>
+		<img id="righty" src="male.png"/>
+	</div>
+	<div id="motivation">
+		<p> As it can be seen from the plots, the sensitive age for male shooters is 15 to 20 and for the female shooters, it is 10 to 15. The age distribution for different races and different locations (states) is investigated, but these age ranges seem to be universal and independent of the race and location. That makes age ranges as a good measure of risk, and Government and education system can have a huge impact by targeting the students with specially produced advertisements and employing psychologists that can work with students.</p>
+	</div>
+	<div id="motivation">
+		<h3> Staffing</h3>
+		<p>A quick look shows that the number of staffing matters a lot. For less than 10 staff per 100 students, the number of shootings is dramatically higher, which means that the schools should either lower their enrollment of increase the number of staffs. Given that a very big majority of attacks has happened in public schools, that means the government is responsible for these incidents. By increasing the education budget and requiring the schools with a lower number of staffings per 100 students to hire more teachers etc. the shooting rate will be reduced by a huge amount.</p>
+		<img id="lefty" src="staffing.png"/>
+		<img id="righty" src="SchoolType.png"/>
+	</div>
+	<div id="motivation">
+		<h3>Gun Population</h3>
+		<p>One reason that immediately comes into the mind for high shooting rate, is the high percentage of gun ownership in the united states. Even though this ratio has been going down during past few years (see <a href="https://www.statisticbrain.com/gun-ownership-statistics-demographics/" target="_blank">Statistic Brain</a>), the attack rates are not following the same trend. This can be a place for Republicans who are on NRA's side, thanks to their lobbying (see <a href="https://www.opensecrets.org/orgs/totals.php?id=D000000082&cycle=2018" target="_blank">OpenSectrets</a> or <a href="http://www.businessinsider.com/nra-power-lobbying-statistics-gun-control-2017-10" target="_blank">Business Insider</a>) to defend gun ownership. Moreover, if we look at the number of guns per capita in different states (obtained from <a href="https://www.thoughtco.com/gun-owners-percentage-of-state-populations-3325153" target="_blank">ThoughtCo.</a>), we see that there is actually no pattern and oddly for the lower value of gun-per-capita the attack rates are high. However, there is another quantity that more indicative and so far I have not seen anybody to take that into account. The total number of guns in the state is what makes a difference. This quantity can be interpreted as a measure of the availability of the guns and with this definition, we should expect higher rate for the higher number of guns.</p>
+		<img id="lefty" src="gunperper.png"/>
+		<img id="righty" src="gunperarea.png"/>
+	</div>
+	<div id="motivation">
+		<p> The number of guns shows that the killing rate indeed is directly related to the number of guns accessible in an area (with p-value 4.8e-10). The easier to find a gun the more probable is the school shooting. This result is also in agreement with the global pattern presented by <a href="https://www.vox.com/policy-and-politics/2018/2/21/17028930/gun-violence-us-statistics-charts" target="_blank">Vox</a>. The area of the state does not play a role, but the area of the cities might be a good measure. The motivation behind this idea is that a true density of guns is a better measure of accessibility of a gun.</p> 
+		<p> We can divide the United States into 5 major areas by K-means clustering methods. By this classification, we can find the areas with higher risk. Also, we can characterize these different classes if we look more closely.</p>
+		<iframe src="cluster.html" width=1200px height=600px frameborder="0"></iframe>
+	</div>
+	<div id="motivation">
+		<p> Another point worth mentioning is that most of the crimes have happened in the East of the country where the areas of states are very small but the number of guns is high. Most of the states with most restrictive gun control laws have high shooting rates (based on <a href="https://www.washingtonpost.com/graphics/2017/national/assault-weapons-laws/?utm_term=.52089470fc85" target="_blank">Washington Post</a>), which indicates that the laws really do not have a significant effect, however reducing the number of guns <i>will</i> bring down these rates linearly.</p>
+	</div>
+	<div id="motivation">
+		<h3>Future Plan</h3>
+		<ul>
+			<li> Look at the cities' Gun Density (Gun per unit Area).</li>
+			<li> Using the effective features to devlope a predictive model on school shooting rates.</li>
+			<li> Develope a map of risky schools or areas based on selling rate of guns and the amount of received money by the school each year to inform parents or the police.</li>
+		</ul>
+	</div>
+	<div id="motivation">
+		<h3>Other Useful Sources</h3>
+		<ul>
+			<li><a href="http://www.ipl.org/div/stateknow/popchart.html" target="_blank">States</a></li>
+			<li><a href="https://www.pri.org/stories/2018-02-23/how-firearms-industry-influences-us-gun-culture-6-charts">PRI</a></li>
+			<li><a href="https://www.safehome.org/resources/gun-laws-and-deaths/" target="_blank">Safe Home</a></li>
+			<li><a href="https://www.theguardian.com/news/datablog/2012/dec/17/how-many-guns-us#data" target="_blank">The Guardian</a></li>
+			<li><a href="https://www.atf.gov/resource-center/data-statistics" target="_blank">Bureau of Alcohol, Tobacco, Firearms and Explosives</a></li>
+		</ul>
+	</div>
+</body>
+</html>
